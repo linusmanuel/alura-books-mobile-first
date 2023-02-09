@@ -15,4 +15,28 @@
 .banner__texto {
   color: inherit;
   line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.banner__pesquisa {
+  padding: 10px 24px;
+  border-radius: 100px;
+  border: solid 1px var(--branco);
+  background-color: transparent;
+  width: 100%;
+  background-image: url('/img/Pesquisa.svg');
+  background-repeat: no-repeat;
+  background-position: 10% center;
+  color: var(--branco);
+}
+
+.banner__pesquisa::placeholder {
+  color: var(--branco);
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.banner__pesquisa:focus {
+  background-image: none;
 }
