@@ -7,6 +7,10 @@
 		<link rel="stylesheet" href="style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+		<link
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Lato:wght@100;300;400;700&family=Montserrat:wght@900&family=Open+Sans:wght@400;600;700;800&family=Outfit:wght@300;400;600&family=Poppins:wght@400;500;700;900&family=Red+Hat+Display:wght@500;700;900&display=swap"
 			rel="stylesheet"
 		/>
@@ -79,5 +83,57 @@
 				placeholder="Qual será sua próxima leitura?"
 			/>
 		</section>
+		<section class="carrossel">
+			<h1 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h1>
+			<!-- Slider main container -->
+			<div class="swiper">
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<img
+							src="/img/ApacheKafka.svg"
+							alt="Livro Apache Kafka e Spring Boot"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="/img/Portugol.svg"
+							alt="Livro Lógica de Programação com Portugal"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img src="/img/Javascript.svg" alt="Livro Javascript Assertivo" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/img/Liderança.svg" alt="Livro Liderança em Design" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/img/Liderança.svg" alt="Livro Liderança em Design" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/img/Guia Front-end.svg" alt="Livro Gui Front-End" />
+					</div>
+				</div>
+
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</section>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper('.swiper', {
+				spaceBetween: 10,
+				slidesPerView: 3,
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+				},
+			});
+		</script>
 	</body>
 </html>
