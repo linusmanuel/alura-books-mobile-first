@@ -65,3 +65,20 @@
   transition: .2s;
   background-color: var(--laranja-hover);
 }
+
+.stars {
+  display: flex;
+}
+
+.star {
+  display: inline-block;
+  background-color: var(--laranja);
+  width: 15px;
+  height: 15px;
+  margin-bottom: 8px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star:not(:last-child) {
+  margin-right: 4px;
+}
