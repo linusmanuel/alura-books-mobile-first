@@ -64,7 +64,12 @@
 
 .opcoes {
   display: none;
+  position: relative;
 }
+
+ .opcoes__botao {
+   display: none;
+ }
 
 @media screen and (min-width: 64rem) {
   .container__titulo, 
@@ -85,16 +90,22 @@
 
   .opcoes {
     display: flex;
+    gap: 42px;
   }
 
-  .opcoes__item:not(:last-child) {
-    margin-right: 42px;
+ 
+  
+  .opcoes__item {
+    text-transform: uppercase;
+    color: var(--preta);
+    padding: 10px;
+
   }
 
   .opcoes__link {
-    text-transform: uppercase;
     text-decoration: none;
-    color: var(--preta);
+    color: currentColor;
+    display: inline-block;
   }
 
   .container__imagem.hidden {
@@ -103,5 +114,10 @@
 
   .cabecalho__menu-hamburguer {
     display: none;
+  }
+
+  .opcoes__botao:checked ~ .lista-menu {
+    display: block;
+    width: auto;
   }
 }
