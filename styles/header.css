@@ -58,6 +58,50 @@
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
-  
+.container__titulo {
+  display: none;
+}
+
+.opcoes {
+  display: none;
+}
+
+@media screen and (min-width: 64rem) {
+  .container__titulo, 
+  .container__titulo--negrito {
+    font-family: var(--fonte-secondaria);
+    font-size: 30px;
+  }
+
+  .container__titulo {
+    margin-left: 11px;
+    display: block;
+  }
+
+  .container__titulo--negrito {
+    margin-left: 11px;
+    font-weight: 700;
+  }
+
+  .opcoes {
+    display: flex;
+  }
+
+  .opcoes__item:not(:last-child) {
+    margin-right: 42px;
+  }
+
+  .opcoes__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--preta);
+  }
+
+  .container__imagem.hidden {
+    display: none;
+  }
+
+  .cabecalho__menu-hamburguer {
+    display: none;
+  }
 }
