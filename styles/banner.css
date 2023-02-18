@@ -40,3 +40,20 @@
 .banner__pesquisa:focus {
   background-image: none;
 }
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    padding-block: 6em;
+  }
+  .banner__titulo {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  .banner__pesquisa {
+    max-width: 476px;
+    width: 100%;
+    background-position: 8em;
+  }
+  
+}
