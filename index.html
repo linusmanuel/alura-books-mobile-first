@@ -204,19 +204,19 @@
 			<div class="swiper">
 				<div class="swiper-pagination"></div>
 				<div class="swiper-wrapper">
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-swiper-autoplay="2000">
 						<img src="/img/Gestão.svg" alt="Livro Gestão de produtos" />
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-swiper-autoplay="2000">
 						<img src="/img/Gestão2.svg" alt="Livro Gestão de produtos" />
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-swiper-autoplay="2000">
 						<img src="/img/MetricasAgeis.svg" alt="Livro Métricas Ágeis" />
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-swiper-autoplay="2000">
 						<img src="/img/UX.svg" alt="Livro UX design" />
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-swiper-autoplay="2000">
 						<img src="/img/Angular.svg" alt="Livro Angular 11 e Firebase" />
 					</div>
 				</div>
@@ -312,6 +312,13 @@
 				pagination: {
 					el: '.swiper-pagination',
 					type: 'bullets',
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				autoplay: {
+					delay: 5000,
 				},
 			});
 		</script>
