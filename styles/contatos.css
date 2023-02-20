@@ -34,3 +34,25 @@
 .contatos__email::placeholder {
   padding-left: 2.5em;
 }
+
+@media screen and (min-width: 1024px) {
+  .contatos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contatos__container {
+    width: 30%;
+    margin-right: 45px;
+  }
+
+  .contatos__titulo {
+    font-size: 24px;
+  }
+
+  .contatos__email {
+    padding-block: 10px;
+    max-width: 326px;
+  }
+}

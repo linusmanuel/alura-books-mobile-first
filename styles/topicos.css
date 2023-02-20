@@ -30,3 +30,14 @@
 .topicos__link:hover {
   background-color: var(--laranja-hover);
 }
+
+@media screen and (min-width: 1024px) {
+  .topicos {
+    padding: 32px 110px;
+  }
+
+  .topicos__link {
+    padding: 24px 32px;
+    font-size: 24px;
+  }
+}
