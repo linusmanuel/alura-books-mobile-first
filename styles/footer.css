@@ -3,3 +3,43 @@
   background-color: var(--branco);
   border-top: solid 1px var(--cor-de-fundo);
 }
+
+.footer__lista {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .footer__titulo {
+    font-size: 24px;
+  }
+
+  .footer__lista {
+    display: block;
+  }
+
+  .footer__lista-titulo {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--cor-de-fundo);
+    margin-bottom: 25px;
+  }
+
+  .footer-lista__item a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--cinza);
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .footer-lista__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}

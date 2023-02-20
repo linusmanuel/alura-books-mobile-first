@@ -53,9 +53,9 @@
     height: 12px;
   }
 
-  .swiper .swiper-button-prev, 
-  .swiper .swiper-button-next {
-  display: block;
-}
+    .swiper .swiper-button-prev, 
+    .swiper .swiper-button-next {
+    display: block;
+  }
 }
 
