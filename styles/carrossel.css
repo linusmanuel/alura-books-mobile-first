@@ -8,6 +8,14 @@
   font-weight: 700;
 }
 
+.swiper {
+  width: 100%;
+} 
+
+.swiper-slide img {
+  width: 100%;
+}
+
 .swiper .swiper-pagination {
   position: initial;
   margin: .5em 0;
@@ -23,14 +31,14 @@
   background-color: var(--azul);
 }
 
-.swiper-slide img {
-  width: 100%;
-}
-
 @media screen and (min-width: 1024px) {
   .carrossel__titulo {
     font-size: 26px;
     padding: 51px 0 16px 0;
+  }
+
+  .swiper {
+    width: 80%;
   }
 
   .swiper .swiper-pagination {
