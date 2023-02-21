@@ -141,4 +141,12 @@
   .container__texto {
     display: block;
   }
+
+  .opcoes {
+    margin-right: auto;
+  }
+
+  .container__titulo {
+    margin-right: 48px;
+  }
 }

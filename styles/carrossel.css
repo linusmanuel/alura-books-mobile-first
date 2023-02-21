@@ -59,3 +59,18 @@
   }
 }
 
+@media screen and (min-width: 1728px) {
+  .carrossel__container {
+    display: flex;
+    margin: 3em 13vw 3em 10vw;
+    align-items: center;
+    gap: 84px;
+  }
+
+  .swiper .swiper-pagination {
+    margin: 0;
+    margin-block-start: 20px;
+    margin-block-end: 40px;
+  }
+}
+
