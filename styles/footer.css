@@ -43,3 +43,14 @@
     margin-bottom: 16px;
   }
 }
+
+@media screen and (min-width: 1728px) {
+  .footer {
+    padding-block: 56px;
+  }
+  
+  .footer__lista {
+    border-left: solid 1px var(--cor-de-fundo);
+    padding-left: 20px;
+  }
+}

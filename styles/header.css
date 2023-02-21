@@ -14,12 +14,13 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 1em;
+  /* padding: 1em; */
 }
 
 .container {
   display: flex;
   align-items: center;
+  gap: 16px;
 }
 
 .lista-menu {
@@ -35,6 +36,21 @@
   display: block;
 }
 
+.container__botao:checked ~ .container__rotulo >.cabecalho__menu-hamburguer {
+  background-image: url('/img/Menu\ Aberto.svg');
+}
+
+.cabecalho__menu-hamburguer {
+  margin-right: 0;
+}
+
+.container__rotulo {
+  padding: 20px;
+}
+
+.container__botao:checked ~.container__rotulo {
+  background-image: var(--azul-degrade);
+}
 .lista-menu__titulo, 
 .lista-menu__item{
   background-color: var(--branco);
