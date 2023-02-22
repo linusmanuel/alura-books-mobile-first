@@ -68,6 +68,7 @@
     -webkit-text-fill-color: transparent;
   background-clip: text;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 .container__botao {
@@ -114,9 +115,24 @@
   .opcoes__item {
     text-transform: uppercase;
     color: var(--preta);
-    padding: 10px;
+    padding: 2em;
 
   }
+
+  .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item {
+    background-image: var(--azul-degrade);
+    color: var(--branco);
+  }
+
+  .lista-menu__item:hover {
+    background-image: var(--azul-degrade);
+  }
+
+  .lista-menu__item:hover> .lista-menu__link {
+    -webkit-text-fill-color: var(--branco);
+    text-decoration: none;
+  }
+
 
   .opcoes__link {
     text-decoration: none;
